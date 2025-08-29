@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --light: #f8f8f8;
+  --dark: #222222;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 1.8s ease-out forwards;
+}
